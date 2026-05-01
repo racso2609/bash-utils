@@ -1,0 +1,25 @@
+{
+  "name": "video-edit",
+  "version": "1.0.0",
+  "description": "Remove background from images and videos using rembg",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "remove_bg.py",
+  "scripts": {
+    "remove-bg": "python remove_bg.py",
+    "remove-bg:video": "python remove_bg.py -v",
+    "make-loop": "bash ./createLoop.sh",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "rembg": "^2.0.57",
+    "opencv-python": "^4.10.0.84",
+    "pillow": "^11.0.0",
+    "numpy": "^2.2.0"
+  },
+  "keywords": ["video", "background", "rembg", "image-processing"],
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
